@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:320px) {}
+@media screen and (min-width:480px) {}
+@media screen and (min-width:768px) {}
+@media screen and (min-width:1024px) {}
+
+html{
+    font-size: 62.5%; /* 1rem=10px*/
+}
+
+main{
+    position:absolute;
+    top:600px;
+
+}
+
+body{
+    background-color: #191c27;
+    font-family:'Avenir-Roman',sans-serif;
+}
+
+
+h1{
+    font-size: 20px;
+    color: white;
+    margin-left: 8px;
+    padding: 10px;
+}
+
+.header .cabecera {
+    height: 100%;
+    overflow: hidden;
+  }
+
+
+
+.menu{
+    position: fixed;
+    top:20px;
+    left:110px;
+    list-style: none;
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
+    text-transform: uppercase;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    display:flex;
+    align-items: center;
+}
+
+.menu li a:hover{
+    text-decoration: underline;
+}
+
+.fondo{
+    border-radius: 13px;
+    width: 100%;
+}
+
+.fondo img{
+    border-radius: 13px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    display: flex;
+    mar
+}
+
+#logo{
+    width:80px;
+    position:fixed;
+    top:8px;
+    left:15px;
+}
+
+#logos-menu{
+    width: 40%;
+    margin: 0px;
+    display: flex;
+    justify-content:space-between;
+}
+
+#logos-menu a{
+    margin-left:10px;
+}
+
+#logos-menu img{
+    width: 15px;
+    margin-right: 8px;
+}
+
+.recomendaciones .contenedor {
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+
+.recomendaciones .contenedor .flecha-izq,
+.recomendaciones .contenedor .flecha-der{
+    position:absolute;
+    border:none;
+    background:transparent;
+    font-size:40px;
+    height:50%;
+    top: calc(50% -25%);
+    line-height: 40px;
+    width:50px;
+    color:transparent;
+    cursor:pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+.recomendaciones .contenedor .flecha-izq{
+    left:0;
+}
+
+.recomendaciones .contenedor .flecha-der{
+    right:0;
+}
+
+.recomendaciones .contenedor .flecha-izq:hover,
+.recomendaciones .contenedor .flecha-der:hover{
+    color:white;
+}
+
+ .pelicula{
+    margin: 13px;
+    padding: 0%;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    cursor: pointer;
+    display:inline-block;
+}
+
+.pelicula img{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    object-fit: cover;
+    object-position: center;
+    padding: 0%;
+    vertical-align:top;
+    
+}
+
+.pelicula:hover{
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+footer{
+    position:absolute;
+    bottom:10px;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.pieDePagina{
+    background-color: rgb(5, 5, 17);
+    width: 100%;
+    position:fixed;
+    left: 0;
+    bottom: 0px;
+    overflow: hidden;
+    
+}
+
+.pieDePagina p{
+    color:white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    overflow: hidden;
+
+}
